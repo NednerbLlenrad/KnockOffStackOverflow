@@ -1,4 +1,4 @@
 package learn.slack_overflow.domain;
 
-public class UserServiceTest {
+public class SlackUserServiceTest {
 }

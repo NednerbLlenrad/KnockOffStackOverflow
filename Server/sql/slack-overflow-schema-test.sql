@@ -39,3 +39,53 @@ create table
                      constraint fk_slack_answer_slack_user_id foreign key (slack_user_id) references slack_user (slack_user_id),
                      constraint fk_slack_answer_slack_question_id foreign key (slack_question_id) references slack_question (slack_question_id)
 );
+
+delimiter //
+
+create procedure set_known_good_state()
+begin
+
+    set sql_safe_updates = 0;
+
+    delete from slack_answer;
+    alter table slack_answer auto_increment = 1;
+
+    delete from slack_question;
+    alter table slack_question auto_increment = 1;
+
+    delete from slack_user;
+    alter table slack_user auto_increment = 1;
+
+    insert into slack_user
+    (username, password_hash, email, chill_points, created_at, edited_at)
+    values
+        (
+            'lazydev',
+            '$2a$10$abcdefghijklmnopqrstuv',
+            'lazydev@example.com',
+            42,
+            current_timestamp,
+            null
+        ),
+        (
+            'bugfarmer',
+            '$2a$10$zyxwvutsrqponmlkjihgfe',
+            'bugfarmer@example.com',
+            13,
+            current_timestamp,
+            null
+        ),
+        (
+            'nullpointer',
+            '$2a$10$qwertyuiopasdfghjklzxc',
+            'nullpointer@example.com',
+            99,
+            current_timestamp,
+            null
+        );
+
+    set sql_safe_updates = 1;
+
+end //
+
+delimiter ;
