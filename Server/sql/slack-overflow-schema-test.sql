@@ -84,6 +84,34 @@ begin
             null
         );
 
+    insert into slack_question
+    (title, body, slack_user_id, chill_points, created_at, edited_at)
+    values
+        (
+            'How do I pretend to debug?',
+            'I want my screen to look busy without accidentally fixing anything.',
+            1,
+            21,
+            current_timestamp,
+            null
+        ),
+        (
+            'Best way to nap during standup?',
+            'Camera is off but I need to survive the status update.',
+            1,
+            8,
+            current_timestamp,
+            null
+        ),
+        (
+            'Can I blame cache for everything?',
+            'It worked yesterday and I changed nothing, probably.',
+            2,
+            15,
+            current_timestamp,
+            null
+        );
+
     set sql_safe_updates = 1;
 
 end //

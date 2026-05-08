@@ -1,0 +1,36 @@
+@url = http://localhost:8080/api/slack-question
+
+### Find all questions
+GET {{url}}
+
+### Find question by id
+GET {{url}}/1
+
+### Find questions by user id
+GET {{url}}/user/1
+
+### Add question
+POST {{url}}
+Content-Type: application/json
+
+{
+  "title": "How do I avoid doing work with maximum efficiency?",
+  "body": "Asking for a friend who is definitely me.",
+  "slackUserId": 1,
+  "chillPoints": 0
+}
+
+### Update question
+PUT {{url}}/1
+Content-Type: application/json
+
+{
+  "slackQuestionId": 1,
+  "title": "How do I avoid doing work with maximum efficiency?",
+  "body": "Updated because I found an even lazier way.",
+  "slackUserId": 1,
+  "chillPoints": 12
+}
+
+### Delete question
+DELETE {{url}}/1
