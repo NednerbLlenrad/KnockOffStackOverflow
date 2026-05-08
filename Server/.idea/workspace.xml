@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc856809-fc6c-4c2f-b65c-e5751f284766" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/NednerbLlenrad/KnockOffStackOverflow.git",
+    "accountId": "d42f1f04-6264-47bd-a272-2062a8e2a641"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.Test.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "git-widget-placeholder": "User-Setup",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.Test">
+    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="DB_URL" value="jdbc:mysql://localhost:3306/slack_overflow" />
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="BiggieP00p103!@" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="learn.slack_overflow.App" />
+      <module name="slack-overflow" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="JUnit" factoryName="JUnit">
+      <module name="slack-overflow" />
+      <option name="PACKAGE_NAME" value="learn.slack_overflow" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <envs>
+        <env name="TEST_DB_URL" value="jdbc:mysql://localhost:3306/slack_overflow_test" />
+        <env name="TEST_DB_USERNAME" value="root" />
+        <env name="TEST_DB_PASSWORD" value="BiggieP00p103!@" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.Test" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>
