@@ -13,8 +13,8 @@ public class SlackUser {
     @Size(max = 20, message = "Username must be 20 characters or fewer.")
     private String username;
 
-    @NotBlank(message = "passwordHash hash is required.")
-    @Size(max = 2048, message = "passwordHash hash must be 2048 characters or fewer.")
+    @NotBlank(message = "Password hash is required.")
+    @Size(max = 2048, message = "Password hash must be 2048 characters or fewer.")
     private String passwordHash;
 
     @NotBlank(message = "Email is required.")
@@ -55,7 +55,7 @@ public class SlackUser {
         this.username = username;
     }
 
-    public String getpasswordHash() {
+    public String getPasswordHash() {
         return passwordHash;
     }
 
@@ -99,11 +99,16 @@ public class SlackUser {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         SlackUser slackUser = (SlackUser) o;
-        return slackUserId == slackUser.slackUserId && chillPoints == slackUser.chillPoints && Objects.equals(username, slackUser.username) && Objects.equals(passwordHash, slackUser.passwordHash) && Objects.equals(email, slackUser.email) && Objects.equals(createdAt, slackUser.createdAt) && Objects.equals(editedAt, slackUser.editedAt);
+        return slackUserId == slackUser.slackUserId
+                && chillPoints == slackUser.chillPoints
+                && Objects.equals(username, slackUser.username)
+                && Objects.equals(email, slackUser.email)
+                && Objects.equals(createdAt, slackUser.createdAt)
+                && Objects.equals(editedAt, slackUser.editedAt);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(slackUserId, username, passwordHash, email, chillPoints, createdAt, editedAt);
+        return Objects.hash(slackUserId, username, email, chillPoints, createdAt, editedAt);
     }
 }

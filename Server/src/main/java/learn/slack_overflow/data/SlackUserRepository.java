@@ -15,6 +15,5 @@ public interface SlackUserRepository {
     boolean update(SlackUser user);
 
     @Transactional
-    boolean deletedById(int userId);
-
+    boolean deleteById(int userId);
 }

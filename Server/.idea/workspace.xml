@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc856809-fc6c-4c2f-b65c-e5751f284766" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/slack-overflow-schema-test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/slack-overflow-schema-test.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/learn/slack_overflow/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/slack_overflow/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/learn/slack_overflow/controllers/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learn/slack_overflow/controllers/SlackUserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/learn/slack_overflow/data/UserJdbcClientRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learn/slack_overflow/data/SlackUserJdbcClientRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/learn/slack_overflow/domain/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learn/slack_overflow/domain/SlackUserServiceTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="fc856809-fc6c-4c2f-b65c-e5751f284766" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +25,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.Test.executor": "Debug",
+    "JUnit.Test.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "git-widget-placeholder": "User-Setup",
     "project.structure.last.edited": "Modules",
